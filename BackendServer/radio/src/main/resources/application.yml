@@ -1,0 +1,21 @@
+mp3-path: '\src\main\resources\static\mp3'
+server:
+  port: 8080
+
+spring:
+  config:
+    activate:
+      on-profile: 'local'
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/radio
+    username: root
+    password: iscp5481*
+  jpa:
+    open-in-view: true
+    properties:
+      hibernate:
+#        format_sql: true
+        hbm2ddl.auto: update
+    show-sql: true
+
